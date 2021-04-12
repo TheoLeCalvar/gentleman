@@ -1,6 +1,7 @@
 import { isNullOrUndefined, valOrDefault } from 'zenkai';
 import { BinaryField } from './binary-field.js';
 import { ChoiceField } from './choice-field.js';
+import { GraphField } from './graph-field.js';
 import { ListField } from './list-field.js';
 import { TableField } from './table-field.js';
 import { TextField } from './text-field.js';
@@ -28,6 +29,16 @@ const Handler = {
         source: { value: projection.concept },
     }),
     'list': (model, schema, projection) => Object.create(ListField, {
+        object: { value: "field" },
+        name: { value: "list-field" },
+        type: { value: "list" },
+        id: { value: nextId() },
+        model: { value: model },
+        schema: { value: schema },
+        projection: { value: projection },
+        source: { value: projection.concept },
+    }),
+    'graph': (model, schema, projection) => Object.create(GraphField, {
         object: { value: "field" },
         name: { value: "list-field" },
         type: { value: "list" },

@@ -1560,6 +1560,85 @@
         },
 
         {
+            "concept": { "name": "graph field" },
+            "type": "layout",
+            "tags": ["choice-selection", "field-config", "config"],
+            "projection": {
+                "type": "stack",
+                "orientation": "vertical",
+                "disposition": [
+                    {
+                        "type": "attribute",
+                        "name": "nodes",
+                        "tag": "",
+                        "required": true,
+                        "placeholder": []
+                    },
+                    {
+                        "type": "attribute",
+                        "name": "arcs",
+                        "tag": "",
+                        "required": true,
+                        "placeholder": []
+                    }
+                ],
+                    
+                "style": {
+                    "css": ["field-config", "field-config--main"]
+                }
+            }
+        },
+        {
+            "concept": { "name": "graph field" },
+            "type": "layout",
+            "tags": ["choice-selection", "field-state", "state"],
+            "projection": {
+                "type": "stack",
+                "orientation": "vertical",
+                "disposition": [
+                    {
+                        "type": "attribute",
+                        "name": "nodes",
+                        "tag": "",
+                        "required": true,
+                        "placeholder": []
+                    },
+                    {
+                        "type": "attribute",
+                        "name": "arcs",
+                        "tag": "",
+                        "required": true,
+                        "placeholder": []
+                    }
+                ],
+                "style": {
+                    "css": ["field-config", "field-config--state"],
+                    "ref": ["pad-left"]
+                }
+            }
+        },
+        {
+            "concept": { "name": "graph field" },
+            "type": "layout",
+            "tags": ["choice"],
+            "projection": {
+                "type": "wrap",
+                "focusable": false,
+                "disposition": [
+                    {
+                        "type": "static",
+                        "static": {
+                            "type": "text",
+                            "help": "Graph Field",
+                            "content": "Graph-Field"
+                        }
+                    }
+                ]
+            }
+        },
+        
+
+        {
             "concept": { "name": "table field" },
             "type": "layout",
             "tags": ["choice-selection"],

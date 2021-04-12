@@ -1,0 +1,98 @@
+[
+    {
+        "id": "a9f31125-af29-4617-a3d7-ecdfe615a6af",
+        "concept": {
+            "name": "world"
+        },
+        "type": "field",
+        "tags": [],
+        "content": {
+            "type": "graph",
+            "readonly": false,
+            "disabled": false,
+            "nodes": "persons",
+            "arcs": "relations"
+        },
+        "metadata": "{\"id\":\"a9f31125-af29-4617-a3d7-ecdfe615a6af\",\"root\":true,\"name\":\"projection\",\"attributes\":[{\"name\":\"concept\",\"value\":{\"id\":\"f1731f1c-ec81-4d8f-a49f-635aac5e2392\",\"name\":\"concept\"}},{\"name\":\"content\",\"value\":{\"id\":\"ab2a91ab-b1b3-4661-ad52-50ddad996b57\",\"name\":\"render\"}},{\"name\":\"tags\",\"value\":null}]}"
+    },
+    {
+        "id": "d3f241c8-0d48-443f-9202-d30c082ee8c3",
+        "concept": {
+            "name": "person"
+        },
+        "type": "layout",
+        "tags": [],
+        "content": {
+            "type": "stack",
+            "orientation": "vertical",
+            "disposition": [
+                {
+                    "type": "layout",
+                    "layout": {
+                        "type": "stack",
+                        "orientation": "horizontal",
+                        "disposition": [
+                            {
+                                "type": "static",
+                                "static": {
+                                    "type": "text",
+                                    "content": "Name",
+                                    "contentType": "text",
+                                    "nonbreakable": true
+                                }
+                            },
+                            {
+                                "type": "attribute",
+                                "name": "name",
+                                "tag": "",
+                                "required": true,
+                                "placeholder": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "metadata": "{\"id\":\"d3f241c8-0d48-443f-9202-d30c082ee8c3\",\"root\":true,\"name\":\"projection\",\"attributes\":[{\"name\":\"concept\",\"value\":{\"id\":\"d89e16ee-d436-42f6-aee9-be996d6d7ae7\",\"name\":\"concept\"}},{\"name\":\"content\",\"value\":{\"id\":\"f2532d67-e428-44b6-bb73-ee44d5f6fefd\",\"name\":\"render\"}},{\"name\":\"tags\",\"value\":null}]}"
+    },
+    {
+        "id": "411bcb08-428d-496d-a118-fe07f991d8fa",
+        "concept": {
+            "name": "relation"
+        },
+        "type": "layout",
+        "tags": [],
+        "content": {
+            "type": "stack",
+            "orientation": "vertical",
+            "disposition": [
+                {
+                    "type": "layout",
+                    "layout": {
+                        "type": "stack",
+                        "orientation": "horizontal",
+                        "disposition": [
+                            {
+                                "type": "static",
+                                "static": {
+                                    "type": "text",
+                                    "content": "Label",
+                                    "contentType": "text",
+                                    "nonbreakable": true
+                                }
+                            },
+                            {
+                                "type": "attribute",
+                                "name": "label",
+                                "tag": "",
+                                "required": true,
+                                "placeholder": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "metadata": "{\"id\":\"411bcb08-428d-496d-a118-fe07f991d8fa\",\"root\":true,\"name\":\"projection\",\"attributes\":[{\"name\":\"concept\",\"value\":{\"id\":\"c7088bed-a87d-4c10-99ae-377ef4277998\",\"name\":\"concept\"}},{\"name\":\"content\",\"value\":{\"id\":\"c6369436-2457-4cb3-ab92-e2cd2adaa0a8\",\"name\":\"render\"}},{\"name\":\"tags\",\"value\":null}]}"
+    }
+]

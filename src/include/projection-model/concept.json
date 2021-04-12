@@ -27,6 +27,7 @@
                             { "name": "binary field" },
                             { "name": "choice field" },
                             { "name": "list field" },
+                            { "name": "graph field" },
                             { "name": "stack layout" },
                             { "name": "wrap layout" },
                             { "name": "flex layout" }
@@ -74,6 +75,7 @@
                                 { "name": "binary field" },
                                 { "name": "choice field" },
                                 { "name": "list field" },
+                                { "name": "graph field" },
                                 { "name": "static text" },
                                 { "name": "static image" },
                                 { "name": "static link" },
@@ -453,6 +455,30 @@
             ]
         },
         {
+            "name": "graph field",
+            "nature": "concrete",
+            "prototype": "field",
+            "attributes": [
+                
+                {
+                    "name": "nodes",
+                    "target": {
+                        "name": "string"
+                    }
+                },
+                {
+                    "name": "arcs",
+                    "target": {
+                        "name": "string"
+                    }
+                }
+            ],
+            "properties": [
+                { "name": "contentType", "type": "string", "value": "field" },
+                { "name": "elementType", "type": "string", "value": "graph" }
+            ]
+        },
+        {
             "name": "table field",
             "nature": "concrete",
             "prototype": "field",
@@ -554,6 +580,7 @@
                                 { "name": "binary field" },
                                 { "name": "choice field" },
                                 { "name": "list field" },
+                                { "name": "graph field" },
                                 { "name": "static text" },
                                 { "name": "static image" },
                                 { "name": "static link" },

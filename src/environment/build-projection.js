@@ -528,6 +528,19 @@ function buildField(field) {
         if (hasAttr(field, "footer")) {
             schema.footer = buildStyle.call(this, getAttr(field, "footer"));
         }
+    } else if (field.name === "graph field") {
+        schema.type = "graph";
+
+        //TODO; is everything important saved ?
+        if (hasAttr(field, "nodes")) {
+            let nodes = getAttr(field, "nodes");
+            schema.nodes = nodes.value;
+        }
+
+        if (hasAttr(field, "arcs")) {
+            let arcs = getAttr(field, "arcs");
+            schema.arcs = arcs.value;
+        }
     }
 
     if (hasAttr(field, "style")) {
